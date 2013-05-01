@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: text/html');
+header('Content-Type: application/xml');
 ?>
 <Response>
   <Sms to="<?=$_REQUEST['PhoneNumber']?>">
