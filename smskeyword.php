@@ -11,6 +11,10 @@ else
 
 if (isset($_REQUEST[$body]))
     $reply = $_REQUEST[$body];
+else if (isset($_REQUEST[strtolower($body)]))
+  $reply = $_REQUEST[strtolower($body)];
+else if (isset($_REQUEST[strtoupper($body)]))
+  $reply = $_REQUEST[strtoupper($body)];
 else
     $reply = $default;
 
