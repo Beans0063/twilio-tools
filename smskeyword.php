@@ -18,8 +18,17 @@ else if (isset($_REQUEST[strtoupper($body)]))
 else
     $reply = $default;
 
+$chunks = explode("||||",wordwrap($reply,155,"||||"));
+$total = count($chunks);
+
 header('Content-Type: application/xml');
+echo "<Response>";
+foreach($chunks as $page => $chunk){
+		echo "<Sms>";
+	  if ($total > 1)
+			echo sprintf("(%d/%d) ",$page+1,$total);
+	  echo $chunk;
+		echo "</Sms>";
+	}
+echo "</Response>";
 ?>
-<Response>
-  <Sms><?php echo htmlspecialchars(substr($reply, 0, 160))?></Sms>
-</Response>
