@@ -24,7 +24,7 @@
     </div>
 
     <div style="padding:3px;">
-        <a href="smsforward.php">areacode_block.php</a>
+        <a href="areacode_block.php">areacode_block.php</a>
         <div style="padding:10px;">
             Parameters:<br/>
             <i>blocked:</i> Comma separated list of area codes to reject<br/>
