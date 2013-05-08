@@ -10,7 +10,7 @@
 	$blocked_arr = explode(",", $blocked);
 	header('Content-Type: application/xml');
 	if ( (!$invert && in_array($area_code, $blocked_arr)) || ($invert && !in_array($area_code, $blocked_arr)) ) {
-	    echo "<Response><Reject/></Response>";
+	    echo "<Response reason=\"busy\"><Reject/></Response>";
 	} else {
     echo "<Response><Redirect>" . $redirect . "</Redirect></Response>";
 	}
