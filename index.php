@@ -30,7 +30,7 @@
             <i>blocked:</i> Comma separated list of area codes to reject<br/>
             <i>redirect:</i> Url to redirect to if the caller's area code isn't blocked<br/>
             <i>Example</i>:<br/>
-            <code><a href="http://twilio-tools.herokuapp.com/areacode_block.php?From=+16043829141&block=604,778,250&redirect=http://demo.twilio.com/welcome/">http://twilio-tools.herokuapp.com/areacode_block.php?From=+16043829141&block=604,778,250&redirect=http://demo.twilio.com/welcome/<a/></code>
+            <code><a href="http://twilio-tools.herokuapp.com/areacode_block.php?From=+16043829141&block=604,778,250&redirect=http://demo.twilio.com/welcome/">http://twilio-tools.herokuapp.com/areacode_block.php?block=604,778,250&redirect=http://demo.twilio.com/welcome/<a/></code>
         </div>
     </div>
 
