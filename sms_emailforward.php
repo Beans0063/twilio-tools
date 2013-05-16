@@ -1,5 +1,7 @@
 <?php
 
+require('sendgrid-php/SendGrid_loader.php');
+
 $sendgrid = new SendGrid($_ENV["SENDGRID_USERNAME"], $_ENV["SENDGRID_PASSWORD"]);
 $to = $_REQUEST['Email'];
 $subject = "SMS from " . $_REQUEST['From'] . " to " . $_REQUEST['To'];
