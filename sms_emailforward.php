@@ -1,6 +1,6 @@
 <?php
 
-require('sendgrid-php/SendGrid_loader.php');
+require 'vendor/autoload.php';
 
 $sendgrid = new SendGrid($_ENV["SENDGRID_USERNAME"], $_ENV["SENDGRID_PASSWORD"]);
 $to = $_REQUEST['Email'];
