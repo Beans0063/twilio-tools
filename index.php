@@ -13,6 +13,16 @@
     </div>
 
     <div style="padding:3px;">
+        <a href="sms_emailforward.php">sms_emailforward.php</a>
+        <div style="padding:10px;">
+            Parameters:<br/>
+            <i>Email:</i> The email address to forward messages to<br/>
+            Example:<br/>
+            <code><a href="http://twilio-tools.herokuapp.com/sms_emailforward.php?Email=you@youremail.com">http://twilio-tools.herokuapp.com/sms_emailforward.php?Email=you@youremail.com<a/></code>
+        </div>
+    </div>
+
+    <div style="padding:3px;">
         <a href="smskeyword.php">smskeyword.php</a>
         <div style="padding:10px;">
             Parameters:<br/>
