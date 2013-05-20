@@ -28,6 +28,7 @@
             Parameters:<br/>
             <i>&lt;any keyword&gt;:</i> Keyword for an autoreply<br/>
             <i>default:</i> Default message to display if no keywords matched<br/>
+            <i>redirect:</i> Optional url to redirect after keyword matching<br/>
             Example:<br/>
             <code><a href="http://twilio-tools.herokuapp.com/smskeyword.php?car=The car is green&boat=The boat is blue&default=Vehicle not found">http://twilio-tools.herokuapp.com/smskeyword.php?car=The car is green&boat=The boat is blue&default=Vehicle not found<a/></code>
         </div>

@@ -4,6 +4,11 @@ if (isset($_REQUEST['Body']))
 else
 	$body = "";
 
+if (isset($_REQUEST['redirect']))
+	$redirect = $_REQUEST['redirect'];
+else
+	$redirect = "";
+
 if (isset($_REQUEST['default']))
     $default = $_REQUEST['default'];
 else
@@ -29,6 +34,9 @@ foreach($chunks as $page => $chunk){
 			echo sprintf("(%d/%d) ",$page+1,$total);
 	  echo $chunk;
 		echo "</Sms>";
-	}
+}
+if ($redirect!="") {
+	echo "<Redirect>" . $redirect . "</Redirect>";
+}
 echo "</Response>";
 ?>
