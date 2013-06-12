@@ -60,7 +60,7 @@ if (!isset($_REQUEST['account_sid'])){ ?>
 	// Write headers
 	$fields = array(
 	    'Call SID', 'From', 'To', 'Start Time', 'End Time',
-	    'Status', 'Direction', 'Price',
+	    'Status', 'Direction', 'Price', 'Seconds', 'Minutes'
 	);
 	echo '"'.implode('","', $fields).'"'."\n";
 
@@ -68,7 +68,7 @@ if (!isset($_REQUEST['account_sid'])){ ?>
 	foreach ($calls as $call) {
 	    $row = array(
 	        $call->sid, $call->from, $call->to, $call->start_time, $call->end_time,
-	        $call->status, $call->direction, $call->price,
+	        $call->status, $call->direction, $call->price, $call->duration, ceil($call->duration/60),
 	    );
 	    echo '"'.implode('","', $row).'"'."\n";
 			set_time_limit(0);

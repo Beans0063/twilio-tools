@@ -45,6 +45,15 @@
             <code><a href="http://twilio-tools.herokuapp.com/areacode_block.php?From=+16043829141&block=604,778,250&redirect=http://demo.twilio.com/welcome/">http://twilio-tools.herokuapp.com/areacode_block.php?block=604,778,250&redirect=http://demo.twilio.com/welcome/<a/></code>
         </div>
     </div>
+
+		<div style="padding:3px;">
+        <a href="call_log_download.php">call_log_download.php</a>
+        <div style="padding:10px;">
+            A reporting tool to download call logs as CSV<br/>
+        </div>
+    </div>
+
+
 		Source code: <a href="https://github.com/Beans0063/twilio-tools">https://github.com/Beans0063/twilio-tools</a>
 
 </body>
