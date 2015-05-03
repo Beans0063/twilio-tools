@@ -1,17 +1,20 @@
 <?php
-$chunks = explode("||||",wordwrap($_REQUEST['Body'],141,"||||"));
-$total = count($chunks);
+	header('Content-Type: application/xml');
 
-header('Content-Type: application/xml');
-echo "<Response>";
-	foreach($chunks as $page => $chunk)
-	{
-		echo "<Sms to=\"". $_REQUEST['PhoneNumber'] . "\">";
-		echo $_REQUEST['From'] . ": ";
-	  if ($total > 1)
-			echo sprintf("(%d/%d) ",$page+1,$total);
-	  echo $chunk;
-		echo "</Sms>";
+	echo "<Response>";
+
+	if (is_array ($_REQUEST['PhoneNumber'])){
+		$forward_to = $_REQUEST['PhoneNumber'];
+	} else {
+		$forward_to = array($_REQUEST['PhoneNumber']);
 	}
-echo "</Response>";
-	?>
+
+	foreach($forward_to as $number)
+	{
+		echo "<Message to=\"". $number . "\">";
+		echo $_REQUEST['From'] . ": ";
+		echo $_REQUEST['Body'];
+		echo "</Message>";
+	}
+	echo "</Response>";
+?>

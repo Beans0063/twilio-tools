@@ -6,9 +6,10 @@
         <a href="smsforward.php">smsforward.php</a>
         <div style="padding:10px;">
             Parameters:<br/>
-            <i>PhoneNumber:</i> The phone number to forward messages to<br/>
-            Example:<br/>
-            <code><a href="http://twilio-tools.herokuapp.com/smsforward.php?PhoneNumber=4155551234">http://twilio-tools.herokuapp.com/smsforward.php?PhoneNumber=4155551234<a/></code>
+            <i>PhoneNumber:</i> The phone number(s) to forward messages to<br/>
+            Examples:<br/>
+            <code><a href="http://twilio-tools.herokuapp.com/smsforward.php?PhoneNumber=4155551234">http://twilio-tools.herokuapp.com/smsforward.php?PhoneNumber=4155551234<a/></code><br/>
+            <code><a href="http://twilio-tools.herokuapp.com/smsforward.php?PhoneNumber[]=4155551234&PhoneNumber[]=2129998765">http://twilio-tools.herokuapp.com/smsforward.php?PhoneNumber[]=4155551234&PhoneNumber[]=2129998765<a/></code>
         </div>
     </div>
 
